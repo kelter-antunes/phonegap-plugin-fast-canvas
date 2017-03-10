@@ -221,7 +221,7 @@ public class FastCanvas extends CordovaPlugin {
 			return false;				
 		}
 		else {
-			return theCanvas.mCordovaView.onKeyDown(keyCode, event);
+			return theCanvas.mCordovaView.getView().onKeyDown(keyCode, event);
 		}
 	}
 	
@@ -230,7 +230,7 @@ public class FastCanvas extends CordovaPlugin {
 			return false;				
 		}
 		else {
-			return theCanvas.mCordovaView.onKeyUp(keyCode, event);
+			return theCanvas.mCordovaView.getView().onKeyUp(keyCode, event);
 		}
 	}
 	

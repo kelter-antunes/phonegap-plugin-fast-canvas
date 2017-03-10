@@ -202,7 +202,7 @@ public class FastCanvas extends CordovaPlugin {
 		else
 			 res = new PluginResult(PluginResult.Status.OK,result);
 		
-		theCanvas.mCordovaView.sendPluginResult(res, callbackID);
+		theCanvas.mCordovaView.getView().sendPluginResult(res, callbackID);
 	}
 
 	public static boolean dispatchTouchEvent (MotionEvent event) {
